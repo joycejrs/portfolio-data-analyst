@@ -1,4 +1,4 @@
-# Projeto 1 – Análise Estratégica de Churn em Telecom
+# Projeto 1 – Análise de Churn em Telecom
 
 **Data:** Abril 2026  
 **Autor:** Joyce R. Santos  
