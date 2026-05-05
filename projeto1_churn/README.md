@@ -1,45 +1,36 @@
-# Projeto 1 – Análise de Churn em Telecom
+# Projeto 1 – Análise Estratégica de Churn em Telecom
 
-## Visão Geral
-- Problema: Churn de 26,5% (~1.869 clientes/mês)  
-- Objetivo: Identificar fatores críticos e criar um score de risco para retenção  
-- Impacto: Score captura 60% dos cancelamentos analisando apenas 30% da base de clientes  
+**Data:** Abril 2026  
+**Autor:** Joyce R. Santos  
+**Dataset:** Telco Customer Churn (IBM – Kaggle)
 
 ---
 
-## Principais Insights
-- Contrato mensal → 42,7% churn (15x maior que contratos longos)  
-- Pagamento via electronic check → 45,3% churn vs 15,2% no cartão  
+## 1. Resumo 
+Análise de churn em empresa de telecom com taxa de 26,5% (~1.869 clientes/mês).  
+**Resultados principais:**
+- Score de risco captura 60% dos cancelamentos analisando apenas 30% da base  
+- Contratos mensais e pagamento via electronic check são os maiores fatores de risco  
 - Segmento crítico: clientes novos (≤3 meses), gasto alto (>70), sem bundle → 77,7% churn  
 
 ---
 
-## Recomendações
-1. Migrar contratos mensais → desconto de 10% → impacto estimado: -11% churn  
-2. Incentivar débito automático/cartão → crédito de $10 → impacto estimado: -8% churn  
-3. Intervenção emergencial → bundle grátis por 2 meses → impacto estimado: -5% churn  
+## 2. Contexto
+- **Problema:** reduzir churn sem aumentar custo de aquisição  
+- **Objetivo:** identificar fatores críticos e criar score de risco acionável  
+- **Métrica de sucesso:** recomendações estratégicas com ROI estimado e score interpretável  
 
 ---
 
-## Impacto Financeiro Estimado
-| Cenário   | Redução de Churn | Clientes Retidos/ano | Economia Anual* |
-|-----------|------------------|----------------------|-----------------|
-| Otimista  | -15%             | +280                 | ~$330.000       |
-| Realista  | -11%             | +206                 | ~$240.000       |
-| Pessimista| -8%              | +150                 | ~$175.000       |
-
-\* Ticket médio: $70/mês  
+## 3. Metodologia
+- **Fonte de dados:** 7.043 clientes, 21 variáveis  
+- **Processo:** limpeza de dados, feature engineering, análise exploratória, score heurístico  
+- **Validação:** correlação point-biserial 0,47 (p<0,001)  
 
 ---
 
-## Tecnologias
-- Python 3.8+  
-- Pandas / NumPy  
-- Matplotlib / Seaborn  
-- Scikit-learn  
-- Git / GitHub  
+## 4. Conclusão
+O projeto demonstrou que contratos mensais e pagamentos via electronic check são os principais drivers de churn.  
+O score de risco permite segmentar clientes críticos e direcionar ações de retenção com impacto financeiro relevante.  
+A abordagem é interpretável, acionável e fornece base sólida para evolução em modelos de machine learning e cálculo de CLV.
 
-
-Data da análise: Abril/2026  
-Autor: Joyce  
-Dataset: Telco Customer Churn (IBM – Kaggle)  
